@@ -17,41 +17,43 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-
-        // Icon
-        // child: Icon(
-        //   Icons.airport_shuttle,
-        //   color: Colors.lightBlue,
-        //   size: 50,
-        // )
-
-        // Button
-        // child: FloatingActionButton(
-        //   onPressed: () {
-        //     print('You clicked me');
-        //   },
-        //   child: Text(
-        //     'Clik me',
-        //     style: TextStyle(color: Colors.white),
-        //   ),
-        //   backgroundColor: Colors.red,
-        //
-        // ),
-
-        // raisedButton
-        child: ElevatedButton.icon(
-          onPressed: () {},
-          icon: Icon(
-            Icons.mail,
-          ),
-          label: Text('Mail me'),
-         style: ElevatedButton.styleFrom(backgroundColor: Colors.lightBlue),
-        ),
-
-
-
-
+      // body: Center(
+      //
+      //   // Icon
+      //   // child: Icon(
+      //   //   Icons.airport_shuttle,
+      //   //   color: Colors.lightBlue,
+      //   //   size: 50,
+      //   // )
+      //
+      //   // Button
+      //   // child: FloatingActionButton(
+      //   //   onPressed: () {
+      //   //     print('You clicked me');
+      //   //   },
+      //   //   child: Text(
+      //   //     'Clik me',
+      //   //     style: TextStyle(color: Colors.white),
+      //   //   ),
+      //   //   backgroundColor: Colors.red,
+      //   //
+      //   // ),
+      //
+      //   // raisedButton
+      //   child: ElevatedButton.icon(
+      //     onPressed: () {},
+      //     icon: Icon(
+      //       Icons.mail,
+      //     ),
+      //     label: Text('Mail me'),
+      //    style: ElevatedButton.styleFrom(backgroundColor: Colors.lightBlue),
+      //   ),
+      // ),
+      body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 20 , vertical: 10),
+        margin: EdgeInsets.all(30),
+        color: Colors.grey[400],
+        child: Text('hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
