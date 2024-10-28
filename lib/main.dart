@@ -18,13 +18,40 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Image(
-          image : NetworkImage('https://th.bing.com/th/id/OIP.FEqv7YYMNjXtrVYqo7HHzAHaE7?rs=1&pid=ImgDetMain')
-                      // if we want to use image from computer just use image : AssetImage('Location of image')
-                      // first make a directory of name Asset, then go to pubspec.yaml and uncomment the asset section the you will update the image address or name
-                      // assets/image1.jpg and now look the first line
-                      // or we can just use Chile : Image.asset('URL'),
-        )
+
+        // Icon
+        // child: Icon(
+        //   Icons.airport_shuttle,
+        //   color: Colors.lightBlue,
+        //   size: 50,
+        // )
+
+        // Button
+        // child: FloatingActionButton(
+        //   onPressed: () {
+        //     print('You clicked me');
+        //   },
+        //   child: Text(
+        //     'Clik me',
+        //     style: TextStyle(color: Colors.white),
+        //   ),
+        //   backgroundColor: Colors.red,
+        //
+        // ),
+
+        // raisedButton
+        child: ElevatedButton.icon(
+          onPressed: () {},
+          icon: Icon(
+            Icons.mail,
+          ),
+          label: Text('Mail me'),
+         style: ElevatedButton.styleFrom(backgroundColor: Colors.lightBlue),
+        ),
+
+
+
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
