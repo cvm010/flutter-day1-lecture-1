@@ -18,16 +18,13 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text(
-          'Hello ninjas',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2,
-            color: Colors.grey[600],
-
-          ),
-        ),
+        child: Image(
+          image : NetworkImage('https://th.bing.com/th/id/OIP.FEqv7YYMNjXtrVYqo7HHzAHaE7?rs=1&pid=ImgDetMain')
+                      // if we want to use image from computer just use image : AssetImage('Location of image')
+                      // first make a directory of name Asset, then go to pubspec.yaml and uncomment the asset section the you will update the image address or name
+                      // assets/image1.jpg and now look the first line
+                      // or we can just use Chile : Image.asset('URL'),
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
