@@ -13,9 +13,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text('my first App'),
+        title: Text(
+            'my first App',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
         backgroundColor: Colors.red[600],
+
       ),
       // body: Center(
       //
@@ -59,23 +63,55 @@ class Home extends StatelessWidget {
       // ),
 
       // Row and column
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: <Widget>[
+      //
+      //     Text('Hello world'),
+      //
+      //     ElevatedButton(
+      //         onPressed: (){},
+      //     style: ElevatedButton.styleFrom(foregroundColor: Colors.lightBlue),
+      //       child: Text('Click me'),
+      //     ),
+      //
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(20),
+      //       child: Text('Inside container'),
+      //     )
+      //
+      //   ],
+      // ),
+
+      //flex properties
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-
-          Text('Hello world'),
-
-          ElevatedButton(
-              onPressed: (){},
-          style: ElevatedButton.styleFrom(foregroundColor: Colors.lightBlue),
-            child: Text('Click me'),
+          Expanded(
+            flex: 3,
+           child : Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
+         Expanded(
+           flex: 2,
+             child: Container(
+               padding: EdgeInsets.all(30),
+               color: Colors.yellow,
+               child: Text('2'),
+             ),
+         ),
 
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(20),
-            child: Text('Inside container'),
+          Expanded(
+            flex: 1,
+              child:  Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.red,
+                child: Text('3'),
+              ),
           )
 
         ],
@@ -86,6 +122,7 @@ class Home extends StatelessWidget {
         },
         child: Text('click me'),
         backgroundColor: Colors.red[600],
+
       ),
     );
   }
